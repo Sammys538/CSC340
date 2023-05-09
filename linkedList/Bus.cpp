@@ -3,6 +3,8 @@ using namespace std;
 
 #include "Bus.h"
 
+//DropOff and PickUp still need to be implemented
+
 int Bus::GetCapacity() const{
 	return capacity;
 }
