@@ -9,20 +9,40 @@ int Bus::GetCapacity() const{
 	return capacity;
 }
 
+int Bus::GetPassengers() const{
+	return passengers;
+}
+
+
 string Bus::GetBusNumber() const{
 	return busNumber;
 }
-		
+
+void Bus::SetCapacity(int input){
+	capacity = input;
+}
+
+void Bus::SetPassengers(int input){
+	passengers = input;
+}		
+
 bool Bus::isFull() const{
-	return false; // Not implemented yet
+	if(passengers >= capacity){
+		return true;
+	}
+	
+	return false;
 }
 
 Bus::Bus(){
-	capacity = 2;
+	capacity = 25;
 	busNumber = "1";
+	passengers = 10;
+	
 }
 
 void Bus::Print(){
 	cout << capacity << endl;
 	cout << busNumber << endl;
+	cout << passengers << endl;
 }
