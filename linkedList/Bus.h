@@ -7,6 +7,9 @@ class Bus{
 	public:
 		int GetCapacity() const;
 		string GetBusNumber() const;
+		int GetPassengers() const;
+		void SetCapacity(int input);
+		void SetPassengers(int input);
 		bool isFull() const;
 		Bus();
 		void Print();
@@ -15,7 +18,7 @@ class Bus{
 	private:
 		string busNumber;
 		int capacity;
+		int passengers;
 };
 
 #endif
-
