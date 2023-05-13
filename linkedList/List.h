@@ -4,7 +4,7 @@
 
 class List{
 
-    private:
+    protected:
     
     typedef struct Node {
 

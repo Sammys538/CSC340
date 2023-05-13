@@ -1,38 +1,32 @@
 #include <iostream>
-#include "List.h"
-#include "List.cpp"
+#include "People.h"
 
 using namespace std;
 
-class People: public List{
-
-   public:
-        string ID;
-        string name;
-        int age;
-
-    People(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age):List(){
+    People::People(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age):List(){
          ID = id;
          name = Name;
          age = Age;
     }
-    void setID(string id){
+    void People::setID(string id){
         ID = id;
     }
-    void setName(string Name){
+    void People::setName(string Name){
     name = Name;
     }
-    void setAge(int Age){
+    void People::setAge(int Age){
         age = Age;
     }
-    string getId(){
+    string People::getID(){
         return ID;
     }
-    string getName(){
+    string People::getName(){
         return name;
     }
-    int getAge(){
+    int People::getAge(){
         return age;
     }
+    void People::print(){
+        cout <<  "Name: " << getName() << " ID: "  << getID() <<" Age:" << getAge() <<endl;
+    }
 
-};

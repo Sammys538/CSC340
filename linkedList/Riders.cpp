@@ -1,35 +1,34 @@
 #include <iostream>
-#include "List.h"
-#include "List.cpp"
-#include "People.cpp"
+#include "Riders.h"
 using namespace std;
 
-class Riders:public People{
-
-    public:
-    int fare;
-    int destination;
-    
-    Riders(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age,int Fare, int Destination)
-            :People(Head,Curr,Temp,id,Name,Age){
+    Riders::Riders(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, double Fare, int Destination, int CurrStop):People(Head, Curr, Temp, id, Name, Age){
                 fare = Fare;
                 destination = Destination;
+                currStop = CurrStop;
     }
-
-    void setFare(int Fare){
+    void Riders::setCurrStop(int CurrStop){
+        currStop = CurrStop;
+    }
+    int Riders::getCurrStop(){
+        return currStop;
+    }
+    void Riders::setFare(double Fare){
         fare = Fare;
     }
     
-    void setDestination(int Destination){
+    void Riders::setDestination(int Destination){
         destination = Destination;
     }
 
-    int getDesination(){
+    int Riders::getDesination(){
         return destination;
     }
 
-    int getFare(){
+    double Riders::getFare(){
         return fare;
     }
-
-};
+    void Riders::print(){
+        cout <<  "Name: " << getName() << " ID: "  << getID() <<" Age:" << getAge() << "Current Stop: " 
+             << getCurrStop() << " Desination: " << getDesination() <<endl;
+    }

@@ -1,47 +1,33 @@
 #include <iostream>
+#include "Driver.h"
+
 using namespace std;
 
-class Driver: public People{
-    private:
-        string busID;
-        bool hasLicense;
-
-    public:
-        Driver(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, string BusID, bool HasLicense)
+        Driver::Driver(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, string BusID, bool HasLicense)
             :People(Head,Curr,Temp,id,Name,Age)
         {
             busID = BusID;
             hasLicense = HasLicense;
         }
 
-        void setBusID(string BusID){
+        void Driver::setBusID(string BusID){
             busID = BusID;
         }
-        void setLicense(bool HasLicense){
+        void Driver::setLicense(bool HasLicense){
             hasLicense = HasLicense;
         }
 
-        string getBusID(){
+        string Driver::getBusID(){
             return busID;
         }
-        bool getHasLicense(){
+        bool Driver::getHasLicense(){
             return hasLicense;
         }
         
-        bool isDriving(){
-            if(){
-                return true;
-            }else{
-                return false;
-            }
+        bool Driver::isDriving(){
+            return true;
         }
 
-        bool onBreak(){
-            if(){
-                return true;
-            }else{
-                return false;
-            }
+        bool Driver::onBreak(){
+            return true;
         }
-    
-};
