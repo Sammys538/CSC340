@@ -22,6 +22,7 @@ class Riders: public People{
     int getDesination();
     double getFare();
     void print();
+    void makeList();
+    
 };
-
 #endif

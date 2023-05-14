@@ -7,6 +7,7 @@
 #include "People.cpp"
 #include "Riders.cpp"
 #include "Driver.cpp"
+#include "Link.cpp"
 
 using namespace std;
 
@@ -60,12 +61,14 @@ int main(){
 	jared->addNode(2);
 	jared->print();
 	jared->printList();
-	
+	jared->makeList();
+
 	People* sammy = new Riders(NULL, NULL, NULL,"917849294", "Sammy ", 21, 5.99, 1, 3);
 	sammy->addNode(1);
 	sammy->addNode(3);
 	sammy->print();
 	sammy->printList();
+	sammy->makeList();
 
 	People* corey = new Driver(NULL, NULL, NULL, "819493049", "Corey", 33, "004",true);
 	corey->addNode(1);
@@ -74,5 +77,6 @@ int main(){
 	corey->addNode(4);
 	corey->print();
 	corey->printList();
-
+	corey->makeList();
+	
 }

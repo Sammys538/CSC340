@@ -3,11 +3,12 @@
 
 using namespace std;
 
-    People::People(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age):List(){
+    People::People(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age):Link(Head,Curr,Temp){
          ID = id;
          name = Name;
          age = Age;
     }
+
     void People::setID(string id){
         ID = id;
     }
@@ -29,4 +30,10 @@ using namespace std;
     void People::print(){
         cout <<  "Name: " << getName() << " ID: "  << getID() <<" Age:" << getAge() <<endl;
     }
+    void People::makeList(){
+        cout << "Make People list." << endl;
+        cout << endl;
+
+    }
+
 

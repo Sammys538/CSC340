@@ -1,13 +1,13 @@
 
 #include <iostream>
 #include <string>
-#include "List.h"
+#include "Link.h"
 using namespace std;
 
 #ifndef PEOPLE_H
 #define PEOPLE_H
 
-class People: public List{
+class People: public Link{
 
    public:
         string ID;
@@ -22,6 +22,7 @@ class People: public List{
     string getName();
     int getAge();
     void print();
+    void makeList();
 };
 
 #endif

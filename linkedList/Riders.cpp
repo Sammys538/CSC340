@@ -32,3 +32,8 @@ using namespace std;
         cout <<  "Name: " << getName() << " ID: "  << getID() <<" Age:" << getAge() << "Current Stop: " 
              << getCurrStop() << " Desination: " << getDesination() <<endl;
     }
+    void Riders::makeList(){
+        cout << "Makes  Riders list." << endl;
+        cout << endl;
+
+    }

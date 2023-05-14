@@ -9,7 +9,6 @@ using namespace std;
             busID = BusID;
             hasLicense = HasLicense;
         }
-
         void Driver::setBusID(string BusID){
             busID = BusID;
         }
@@ -30,4 +29,8 @@ using namespace std;
 
         bool Driver::onBreak(){
             return true;
+        }
+        void Driver::makeList(){
+            cout << "Makes  driver list." << endl;
+            cout << endl;
         }
