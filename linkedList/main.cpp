@@ -61,12 +61,17 @@ int main(){
 	jared->addNode(2);
 	jared->print();
 	jared->printList();
+	jared->deleteNode(2);
+	jared->printList();
 	jared->makeList();
 
 	People* sammy = new Riders(NULL, NULL, NULL,"917849294", "Sammy ", 21, 5.99, 1, 3);
 	sammy->addNode(1);
 	sammy->addNode(3);
+	sammy->addNode(4);
 	sammy->print();
+	sammy->printList();
+	sammy->deleteNode(3);
 	sammy->printList();
 	sammy->makeList();
 

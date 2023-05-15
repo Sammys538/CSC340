@@ -17,7 +17,8 @@ class List{
 
     nodePtr head;
     nodePtr curr;
-
+    nodePtr temp;
+    
     List();
     void addNode(int addData); 
     void deleteNode(int delData);

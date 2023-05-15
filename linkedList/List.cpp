@@ -7,6 +7,7 @@ using namespace std;
 List::List(){ // defines the constructor functions for the List class
     head = NULL;
     curr = NULL;
+    temp = NULL;
 }
 
 void List::addNode(int addData){
@@ -28,7 +29,6 @@ void List::addNode(int addData){
 
 void List::deleteNode(int delData){
     nodePtr delPtr = NULL;
-    nodePtr temp = NULL;
     temp = head;
     curr = head;
 
@@ -51,7 +51,6 @@ void List::deleteNode(int delData){
         }
 
         delete delPtr;
-        delete temp;
         cout << "The value: " << delData << " was deleted." << endl;
     }
 }
