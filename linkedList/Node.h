@@ -1,19 +1,19 @@
-#include <iostream>
-#ifndef Node_H
-#define Node_H
+// #include <iostream>
+// #ifndef Node_H
+// #define Node_H
 
-// Creates Stops Class
-class Node{
-	public:
-		Node();
-		void SetData(string input);
-		string GetData();
-	private:
-		string data;
-		Node* nextNode;
-		Node* prevNode;
-		Node* headNode;
-		Node* currNode;		
-};
+//     typedef class Node{
+// 		public:
+// 			void printList();
+// 			void deleteNode(int delData);
+// 		private:
+// 			string data;
+// 			nodePtr head;
+// 			nodePtr curr;
+// 			nodePtr temp;
+// 			nodePtr next;
+// 			nodePtr prev;
 
-#endif
+// 	}* nodePtr;
+
+// #endif

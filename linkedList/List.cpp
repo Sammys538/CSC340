@@ -7,14 +7,14 @@ using namespace std;
 List::List(){ // defines the constructor functions for the List class
     head = NULL;
     curr = NULL;
-    temp = NULL;
 }
 
 void List::addNode(int addData){
     nodePtr n = new Node; // declares and initializes n to point to a new node(samething as Node* nodeptr)
     n -> next = NULL; // node* n points to node* next which is equal to NULL
     n -> data = addData;
-
+    n -> prev = NULL;
+    
      if(head != NULL){
         curr = head;
         while(curr->next != NULL){
@@ -28,6 +28,7 @@ void List::addNode(int addData){
 
 void List::deleteNode(int delData){
     nodePtr delPtr = NULL;
+    nodePtr temp = NULL;
     temp = head;
     curr = head;
 
@@ -50,6 +51,7 @@ void List::deleteNode(int delData){
         }
 
         delete delPtr;
+        delete temp;
         cout << "The value: " << delData << " was deleted." << endl;
     }
 }

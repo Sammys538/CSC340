@@ -1,18 +1,19 @@
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-#include "Node.h"
+// #include "Node.h"
 
+// Node::Node(){
+// 	data = "node";
+// 	prevNode = nullptr;
+// 	nextNode = nullptr;
+// 	currNode = nullptr;
+// 	headNode = nullptr;
+// }
 
-Node::Node(){
-	data = "node";
-	prevNode = nullptr;
-	nextNode = nullptr;
-	currNode = nullptr;
-	headNode = nullptr;
-}
+// string Node::GetData(){
+// 	return data;
+// }
 
-string Node::GetData(){
-	return data;
-}
-
+ 
+ 
