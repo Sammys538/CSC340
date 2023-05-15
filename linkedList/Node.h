@@ -1,19 +1,25 @@
-// #include <iostream>
-// #ifndef Node_H
-// #define Node_H
+#include <iostream>
+#ifndef Node_H
+#define Node_H
 
-//     typedef class Node{
-// 		public:
-// 			void printList();
-// 			void deleteNode(int delData);
-// 		private:
-// 			string data;
-// 			nodePtr head;
-// 			nodePtr curr;
-// 			nodePtr temp;
-// 			nodePtr next;
-// 			nodePtr prev;
+class Node{
+	public:
+		Node();
+		string GetData();
+		Node* GetNextNode();
+		Node* GetPrevNode();
+		
+		void SetData(string input);
+		void SetNextNode(Node* next);
+		void SetPrevNode(Node* prev);
+		
+	private:
+	
+		string data;
+		Node* nextNode;
+		Node* prevNode;
+		Node* head;
+		Node* curr;
+};
 
-// 	}* nodePtr;
-
-// #endif
+#endif
