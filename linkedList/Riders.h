@@ -15,6 +15,7 @@ class Riders: public People{
     int currStop;
 
     Riders(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, double Fare, int Destination, int CurrStop);
+    Riders();
     void setCurrStop(int CurrStop);
     int getCurrStop();
     void setFare(double Fare);
