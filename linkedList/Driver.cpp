@@ -36,6 +36,17 @@ using namespace std;
         bool Driver::onBreak(){
             return true;
         }
+
+        void Driver::print(){
+        	cout <<  "Name: " << getName() << ", ID: "  << getID() << ", Age: " << getAge() << ", Bus ID: " << getBusID()
+        	 << ", Has License: ";
+        	if(getHasLicense() == true){
+        		cout << "Yes" << endl;
+        	} else{
+        		cout << "No" << endl;
+        	}
+        }
+
         void Driver::makeList(){
             cout << "Makes  driver list." << endl;
             cout << endl;
