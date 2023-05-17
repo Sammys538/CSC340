@@ -9,6 +9,12 @@ using namespace std;
          age = Age;
     }
 
+    People::People():Link(){
+    	ID = "0000";
+    	name = "John Doe";
+    	age = 99;
+    }
+
     void People::setID(string id){
         ID = id;
     }
@@ -28,7 +34,7 @@ using namespace std;
         return age;
     }
     void People::print(){
-        cout <<  "Name: " << getName() << " ID: "  << getID() <<" Age:" << getAge() <<endl;
+        cout <<  "Name: " << getName() << ", ID: "  << getID() << ", Age: " << getAge() << endl;
     }
     void People::makeList(){
         cout << "Make People list." << endl;
