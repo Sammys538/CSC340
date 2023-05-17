@@ -5,3 +5,7 @@
 Link::Link(Node* Head, Node* Curr, Node* Temp):Node(){
    
 }
+
+Link::Link(){
+
+}
