@@ -15,6 +15,7 @@ class People: public Link{
         int age;
 
     People(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age);
+    People();
     void setID(string id);
     void setName(string Name);
     void setAge(int Age);
