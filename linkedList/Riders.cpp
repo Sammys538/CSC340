@@ -7,6 +7,14 @@ using namespace std;
                 destination = Destination;
                 currStop = CurrStop;
     }
+
+    Riders::Riders():People(){
+    	fare = 2.5;
+    	destination = 3;
+    	currStop = 0;
+    
+    }
+
     void Riders::setCurrStop(int CurrStop){
         currStop = CurrStop;
     }
@@ -21,7 +29,7 @@ using namespace std;
         destination = Destination;
     }
 
-    int Riders::getDesination(){
+    int Riders::getDestination(){
         return destination;
     }
 
@@ -29,8 +37,8 @@ using namespace std;
         return fare;
     }
     void Riders::print(){
-        cout <<  "Name: " << getName() << " ID: "  << getID() <<" Age:" << getAge() << "Current Stop: " 
-             << getCurrStop() << " Desination: " << getDesination() <<endl;
+        cout <<  "Name: " << getName() << ", ID: "  << getID() << ", Age:" << getAge() << ", Current Stop: " 
+             << getCurrStop() << ", Destination: " << getDestination() << endl;
     }
     void Riders::makeList(){
         cout << "Makes  Riders list." << endl;
