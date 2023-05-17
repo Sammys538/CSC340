@@ -13,8 +13,8 @@ class Bus{
 		bool isFull() const;
 		Bus();
 		void Print();
-		void dropOff();
-		void pickUp();
+		void DropOff();
+		void PickUp();
 	private:
 		string busNumber;
 		int capacity;
