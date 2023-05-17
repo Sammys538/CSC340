@@ -9,6 +9,12 @@ using namespace std;
             busID = BusID;
             hasLicense = HasLicense;
         }
+
+        Driver::Driver():People(){
+        	busID = "0029";
+        	hasLicense = true;
+        }
+
         void Driver::setBusID(string BusID){
             busID = BusID;
         }
