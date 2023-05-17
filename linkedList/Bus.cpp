@@ -3,8 +3,6 @@ using namespace std;
 
 #include "Bus.h"
 
-//DropOff and PickUp still need to be implemented
-
 int Bus::GetCapacity() const{
 	return capacity;
 }
@@ -32,6 +30,14 @@ bool Bus::isFull() const{
 	}
 	
 	return false;
+}
+
+void Bus::DropOff(){
+	passengers -= 3;
+}
+
+void Bus::PickUp(){
+	passengers += 4;
 }
 
 Bus::Bus(){
