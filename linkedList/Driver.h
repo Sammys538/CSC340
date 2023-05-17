@@ -22,6 +22,7 @@ class Driver: public People{
         bool isDriving();
         bool onBreak();
         void makeList();
+        void print();
 };
 
 #endif
