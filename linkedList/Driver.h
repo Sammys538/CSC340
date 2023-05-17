@@ -14,6 +14,7 @@ class Driver: public People{
         bool hasLicense; 
 
         Driver(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, string BusID, bool HasLicense);
+        Driver();
         void setBusID(string BusID);
         void setLicense(bool HasLicense);
         string getBusID();
