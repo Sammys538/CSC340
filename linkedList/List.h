@@ -1,29 +1,22 @@
-
+using namespace std;
 #ifndef LIST_H
 #define LIST_H
+#include "Node.h"
 
 class List{
+private:
 
-    public:
+    Node* head;
+    Node* curr;
+    Node* temp;
 
-    typedef class Node {
-        
-        public:
-            int data;
-            Node* next; 
-            Node* prev;
+public:
 
-    }* nodePtr;
-
-    nodePtr head;
-    nodePtr curr;
-    nodePtr temp;
-    
     List();
-    void addNode(int addData); 
-    void deleteNode(int delData);
+    void addNode(string addData); 
+    void deleteNode(string delData);
     void printList();
-    void swap(int firData,int secData);
+    void swap(string firData,string secData);
 };
 
 #endif

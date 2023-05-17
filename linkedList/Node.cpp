@@ -3,33 +3,32 @@ using namespace std;
 
 #include "Node.h"
 
-
 Node::Node(){
-	data = "node";
-	prevNode = nullptr;
-	nextNode = nullptr;
+	data = "NULL";
+	nextNode = NULL;
+	prevNode = NULL;
 }
 
-string Node::GetData(){
+string Node::getData(){
 	return data;
 }
 
-Node* Node::GetNextNode(){
+Node* Node::getNextNode(){
 	return nextNode;
 }
 
-Node* Node::GetPrevNode(){
+Node* Node::getPrevNode(){
 	return prevNode;
 }
 
-void Node::SetData(string input){
+void Node::setData(string input){
 	data = input;
 }
 
-void Node::SetNextNode(Node* next){
+void Node::setNextNode(Node* next){
 	nextNode = next;
 }
 
-void Node::SetPrevNode(Node* prev){
+void Node::setPrevNode(Node* prev){
 	prevNode = prev;
 }

@@ -5,21 +5,19 @@
 class Node{
 	public:
 		Node();
-		string GetData();
-		Node* GetNextNode();
-		Node* GetPrevNode();
-		
-		void SetData(string input);
-		void SetNextNode(Node* next);
-		void SetPrevNode(Node* prev);
-		
+
+		string getData();
+		Node* getNextNode();
+		Node* getPrevNode();
+
+		void setData(string input);
+		void setNextNode(Node* next);
+		void setPrevNode(Node* prev);
+
 	private:
-	
 		string data;
 		Node* nextNode;
 		Node* prevNode;
-		Node* head;
-		Node* curr;
 };
 
 #endif

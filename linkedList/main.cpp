@@ -56,32 +56,45 @@ int main(){
 	// Node test4;
 	// cout << test4.GetData() << endl;
 	
-	People* jared = new People(NULL, NULL, NULL, "918394079", "Jared Barbero", 23);
-	jared->addNode(1);
-	jared->addNode(2);
-	jared->print();
-	jared->printList();
-	jared->deleteNode(2);
-	jared->printList();
-	jared->makeList();
+	// People* jared = new People(NULL, NULL, NULL, "918394079", "Jared Barbero", 23);
+	// jared->addNode("Stop 1");
+	// jared->addNode("Stop 2");
+	// jared->print();
+	// jared->printList();
+	// jared->deleteNode("Stop 2");
+	// jared->printList();
+	// jared->makeList();
 
-	People* sammy = new Riders(NULL, NULL, NULL,"917849294", "Sammy ", 21, 5.99, 1, 3);
-	sammy->addNode(1);
-	sammy->addNode(3);
-	sammy->addNode(4);
-	sammy->print();
-	sammy->printList();
-	sammy->deleteNode(3);
-	sammy->printList();
-	sammy->makeList();
+	// People* sammy = new Riders(NULL, NULL, NULL,"917849294", "Sammy ", 21, 5.99, 1, 3);
+	// sammy->addNode("Stop 1");
+	// sammy->addNode("Stop 3");
+	// sammy->addNode("Stop 4");
+	// sammy->print();
+	// sammy->printList();
+	// sammy->deleteNode("Stop 3");
+	// sammy->printList();
+	// sammy->makeList();
 
-	People* corey = new Driver(NULL, NULL, NULL, "819493049", "Corey", 33, "004",true);
-	corey->addNode(1);
-	corey->addNode(2);
-	corey->addNode(3);
-	corey->addNode(4);
-	corey->print();
-	corey->printList();
-	corey->makeList();
+	// People* corey = new Driver(NULL, NULL, NULL, "819493049", "Corey", 33, "004",true);
+	// corey->addNode("Stop 1");
+	// corey->addNode("Stop 2");
+	// corey->addNode("Stop 3");
+	// corey->addNode("Stop 4");
+	// corey->print();
+	// corey->printList();
+	// corey->makeList();
 	
+	Link* list = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
+	list->setData("1");
+	
+	
+	People* sammy = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
+	People* jared = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
+	List* pile = new List();
+	pile->addNode("jared");
+	pile->addNode("sammy");
+	pile->addNode("corey");
+	pile->printList();
+	pile->deleteNode("sammy");
+	pile->printList();
 }

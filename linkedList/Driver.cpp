@@ -3,7 +3,7 @@
 
 using namespace std;
 
-        Driver::Driver(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, string BusID, bool HasLicense)
+        Driver::Driver(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, string BusID, bool HasLicense)
             :People(Head,Curr,Temp,id,Name,Age)
         {
             busID = BusID;

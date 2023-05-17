@@ -1,7 +1,7 @@
 
 #include <iostream>
-#include "Link.h"
+//#include "Link.h"
 
-Link::Link(nodePtr Head, nodePtr Curr, nodePtr Temp):List(){
+Link::Link(Node* Head, Node* Curr, Node* Temp):Node(){
    
 }

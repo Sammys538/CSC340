@@ -14,7 +14,7 @@ class Riders: public People{
     int destination;
     int currStop;
 
-    Riders(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, double Fare, int Destination, int CurrStop);
+    Riders(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, double Fare, int Destination, int CurrStop);
     void setCurrStop(int CurrStop);
     int getCurrStop();
     void setFare(double Fare);

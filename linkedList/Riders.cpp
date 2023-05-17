@@ -2,7 +2,7 @@
 #include "Riders.h"
 using namespace std;
 
-    Riders::Riders(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, double Fare, int Destination, int CurrStop):People(Head, Curr, Temp, id, Name, Age){
+    Riders::Riders(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, double Fare, int Destination, int CurrStop):People(Head, Curr, Temp, id, Name, Age){
                 fare = Fare;
                 destination = Destination;
                 currStop = CurrStop;

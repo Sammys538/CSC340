@@ -13,7 +13,7 @@ class Driver: public People{
         string busID;
         bool hasLicense; 
 
-        Driver(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age, string BusID, bool HasLicense);
+        Driver(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, string BusID, bool HasLicense);
         void setBusID(string BusID);
         void setLicense(bool HasLicense);
         string getBusID();

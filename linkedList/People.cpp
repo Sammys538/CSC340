@@ -3,7 +3,7 @@
 
 using namespace std;
 
-    People::People(nodePtr Head, nodePtr Curr, nodePtr Temp, string id, string Name, int Age):Link(Head,Curr,Temp){
+    People::People(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age):Link(Head,Curr,Temp){
          ID = id;
          name = Name;
          age = Age;
@@ -33,7 +33,7 @@ using namespace std;
     void People::makeList(){
         cout << "Make People list." << endl;
         cout << endl;
-
+        
     }
 
 

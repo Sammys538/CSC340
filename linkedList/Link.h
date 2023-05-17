@@ -1,13 +1,13 @@
 
-#include "List.h"
+//#include "List.h"
 #ifndef LINK_H
 #define LINK_H
 
-class Link: public List{
+class Link: public Node{
 
     public:
-    Link(nodePtr Head, nodePtr Curr, nodePtr Temp);
-    virtual void makeList() = 0;
+    Link(Node* Head, Node* Curr, Node* Temp);
+    //virtual void makeList() = 0;
     
 };
 
