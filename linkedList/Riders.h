@@ -20,7 +20,7 @@ class Riders: public People{
     int getCurrStop();
     void setFare(double Fare);
     void setDestination(int Destination);
-    int getDesination();
+    int getDestination();
     double getFare();
     void print();
     void makeList();
