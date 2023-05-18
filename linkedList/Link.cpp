@@ -1,11 +1,11 @@
 
-#include <iostream>
-//#include "Link.h"
+// #include <iostream>
+// //#include "Link.h"
 
-Link::Link(Node* Head, Node* Curr, Node* Temp):Node(){
+// Link::Link(Node* Head, Node* Curr, Node* Temp):Node(){
    
-}
+// }
 
-Link::Link(){
+// Link::Link(){
 
-}
+// }
