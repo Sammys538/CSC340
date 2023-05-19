@@ -18,8 +18,10 @@ int main(){
 	cout << "Using Print()" << endl;
 	test1.Print();
 	test1.DropOff();
+	cout << endl;
 	test1.Print();
 	test1.PickUp();
+	cout << endl;
 	test1.Print();
 	if(test1.isFull() == 0){
 		cout << "Bus is not full" << endl;
@@ -27,6 +29,7 @@ int main(){
 	else{
 		cout << "Bus is full" << endl;
 	}
+	cout << endl;
 	cout << "Using SetPassengers()" << endl;
 	test1.SetPassengers(25);
 	if(test1.isFull() == 0){
