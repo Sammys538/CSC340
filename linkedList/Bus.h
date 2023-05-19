@@ -15,6 +15,10 @@ class Bus{
 		void Print();
 		void DropOff();
 		void PickUp();
+		void report(){
+			cout << "Hi" << endl;
+		};
+	
 	private:
 		string busNumber;
 		int capacity;
