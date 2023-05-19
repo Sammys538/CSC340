@@ -10,7 +10,7 @@ class Node{
 		Node* getNextNode();
 		Node* getPrevNode();
 
-		void setData(string input);
+		void setData(Link* input);
 		void setNextNode(Node* next);
 		void setPrevNode(Node* prev);
 
