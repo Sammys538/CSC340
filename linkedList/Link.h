@@ -24,6 +24,7 @@ class Link{
    //  Link();
    //  virtual void makeList() = 0; // comment out
     	virtual void report() = 0;
+        virtual int rideAmount() = 0;
     	
 //     
 };
