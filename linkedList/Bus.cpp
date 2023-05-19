@@ -52,3 +52,9 @@ void Bus::Print(){
 	cout << busNumber << endl;
 	cout << passengers << endl;
 }
+
+void Bus::report(){
+	cout << "Capacity: " << capacity << endl;
+	cout << "Bus Number: " << busNumber << endl;
+	cout << "Passengers: " << passengers << endl;
+}
