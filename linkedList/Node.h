@@ -4,9 +4,9 @@
 
 class Node{
 	public:
-		Node();
+		Node(Link* obj);
 
-		string getData();
+		Link* getData();
 		Node* getNextNode();
 		Node* getPrevNode();
 
@@ -15,7 +15,7 @@ class Node{
 		void setPrevNode(Node* prev);
 
 	private:
-		string data;
+		Link* data;
 		Node* nextNode;
 		Node* prevNode;
 };
