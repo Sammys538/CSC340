@@ -33,6 +33,6 @@ void Node::setPrevNode(Node* prev){
 	prevNode = prev;
 }
 
-void Node::print(){
-	cout << this->data;
-}
+// void Node::print(){
+// 	cout << this->data;
+// }
