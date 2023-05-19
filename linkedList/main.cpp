@@ -1,13 +1,13 @@
 #include<iostream>
-#include "List.cpp"
+// #include "List.cpp"
 #include "Bus.cpp"
-#include "Route.cpp"
-#include "Stops.cpp"
+// #include "Route.cpp"
+// #include "Stops.cpp"
 #include "Node.cpp"
-#include "People.cpp"
-#include "Riders.cpp"
-#include "Driver.cpp"
-#include "Link.cpp"
+// #include "People.cpp"
+// #include "Riders.cpp"
+// #include "Driver.cpp"
+// #include "Link.cpp"
 
 using namespace std;
 
@@ -40,84 +40,93 @@ int main(){
 	
 	cout << endl;
 	
-	cout << "ROUTE TESTS" << endl;
-	Route test2;
-	cout << "Using Print()" << endl;
-	test2.Print();
-	cout << "Using GetSchedule()" << endl;
-	cout << test2.GetSchedule() << endl;
-	cout << "Using SetSchedule()" << endl;
-	test2.SetSchedule("5 8 5");
-	test2.Print();
-	
+	cout << "NODES TEST" << endl;
+	Bus* test2 = new Bus();
+	Node* pointer = new Node(test2);
+	pointer->getData()->report();
 	cout << endl;
 	
-	cout << "STOPS TESTS" << endl;
-	Stops test3;
-	cout << "Using Print()" << endl;
-	test3.Print();
-	cout << "Using all getters" << endl;
-	cout << test3.GetAmount() << endl;
-	cout << test3.GetLocation() << endl;
-	cout << "After using setters" << endl;
-	test3.SetAmount(100);
-	test3.SetLocation(5);
-	test3.Print();
+	test2->SetCapacity(30);
+	pointer->getData()->report();
 	
-	cout << endl;
+// 	cout << "ROUTE TESTS" << endl;
+// 	Route test2;
+// 	cout << "Using Print()" << endl;
+// 	test2.Print();
+// 	cout << "Using GetSchedule()" << endl;
+// 	cout << test2.GetSchedule() << endl;
+// 	cout << "Using SetSchedule()" << endl;
+// 	test2.SetSchedule("5 8 5");
+// 	test2.Print();
 	
-	cout << "NODE TESTS" << endl;
-	Node test4;
-	cout << "Using Getters" << endl;
-	cout << test4.getData() << endl;
-	cout << test4.getNextNode() << "<- null pointer" << endl;
-	cout << test4.getPrevNode() << "<- null pointer" << endl;
-	cout << "Using Setter" << endl;
-	test4.setData("Test Node");
-	cout << test4.getData() << endl;
+// 	cout << endl;
 	
-	cout << endl;
+// 	cout << "STOPS TESTS" << endl;
+// 	Stops test3;
+// 	cout << "Using Print()" << endl;
+// 	test3.Print();
+// 	cout << "Using all getters" << endl;
+// 	cout << test3.GetAmount() << endl;
+// 	cout << test3.GetLocation() << endl;
+// 	cout << "After using setters" << endl;
+// 	test3.SetAmount(100);
+// 	test3.SetLocation(5);
+// 	test3.Print();
 	
-	cout << "PEOPLE TESTS" << endl;
+// 	cout << endl;
 	
-	People sammy(nullptr, nullptr, nullptr, "0528", "Sammy", 19);
-	sammy.print();
-	People zero;
-	zero.print();
+// 	cout << "NODE TESTS" << endl;
+// 	Node test4;
+// 	cout << "Using Getters" << endl;
+// 	cout << test4.getData() << endl;
+// 	cout << test4.getNextNode() << "<- null pointer" << endl;
+// 	cout << test4.getPrevNode() << "<- null pointer" << endl;
+// 	cout << "Using Setter" << endl;
+// 	test4.setData("Test Node");
+// 	cout << test4.getData() << endl;
 	
-	cout << endl;
+// 	cout << endl;
 	
-	cout << "RIDERS TESTS" << endl;
+// 	cout << "PEOPLE TESTS" << endl;
 	
-	Riders jared(nullptr, nullptr, nullptr, "1010", "Jared", 20, 1.5, 3, 2);
-	jared.print();
-	Riders basic;
-	basic.print();
+// 	People sammy(nullptr, nullptr, nullptr, "0528", "Sammy", 19);
+// 	sammy.print();
+// 	People zero;
+// 	zero.print();
 	
-	cout << endl;
+// 	cout << endl;
 	
-	cout << "DRIVERS TESTS" << endl;
+// 	cout << "RIDERS TESTS" << endl;
 	
-	Driver trucker(nullptr, nullptr, nullptr, "1111", "Dave", 40, "2595", true);
-	trucker.print();
-	Driver unknown;
-	unknown.print();
+// 	Riders jared(nullptr, nullptr, nullptr, "1010", "Jared", 20, 1.5, 3, 2);
+// 	jared.print();
+// 	Riders basic;
+// 	basic.print();
 	
-	cout << endl;
+// 	cout << endl;
 	
-	cout << "LIST TESTS" << endl;
+// 	cout << "DRIVERS TESTS" << endl;
 	
-	Link* list = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
-	list->setData("1");
+// 	Driver trucker(nullptr, nullptr, nullptr, "1111", "Dave", 40, "2595", true);
+// 	trucker.print();
+// 	Driver unknown;
+// 	unknown.print();
+	
+// 	cout << endl;
+	
+// 	cout << "LIST TESTS" << endl;
+	
+// 	Link* list = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
+// 	list->setData("1");
 	
 	
-// 	People* sammy = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
-// 	People* jared = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
-	List* pile = new List();
-	pile->addNode("jared");
-	pile->addNode("sammy");
-	pile->addNode("corey");
-	pile->printList();
-	pile->deleteNode("sammy");
-	pile->printList();
+// // 	People* sammy = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
+// // 	People* jared = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
+// 	List* pile = new List();
+// 	pile->addNode("jared");
+// 	pile->addNode("sammy");
+// 	pile->addNode("corey");
+// 	pile->printList();
+// 	pile->deleteNode("sammy");
+// 	pile->printList();
 }
