@@ -3,14 +3,14 @@ using namespace std;
 
 #include "Node.h"
 
-Node::Node(){
-	data = "NULL";
+Node::Node(Link* obj){
+	this->data = obj;
 	nextNode = NULL;
 	prevNode = NULL;
 }
 
-string Node::getData(){
-	return data;
+Link* Node::getData(){
+	return this->data;
 }
 
 Node* Node::getNextNode(){
@@ -21,7 +21,7 @@ Node* Node::getPrevNode(){
 	return prevNode;
 }
 
-void Node::setData(string input){
+void Node::setData(Link* input){
 	data = input;
 }
 
@@ -31,4 +31,8 @@ void Node::setNextNode(Node* next){
 
 void Node::setPrevNode(Node* prev){
 	prevNode = prev;
+}
+
+void Node::print(){
+	cout << this->data;
 }
