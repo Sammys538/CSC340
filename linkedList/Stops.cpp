@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include <cstdlib>
 
 #include "Stops.h"
 
@@ -22,11 +23,25 @@ void Stops::SetLocation(int input){
 
 
 Stops::Stops(){
-	amount = 50;
+	srand(time(NULL));
+	amount = (rand() % 4) + 1;
 	location = 1;
 }
 
+Stops::Stops(int riders, int stopNum){
+	amount = riders;
+	location = stopNum;
+}
+
 void Stops::Print(){
-	cout << amount << endl;
-	cout << location << endl;
+	cout << "Amount: " <<  amount << ", Location: " << location << endl;
+}
+
+void Stops::report(){
+	cout << "Amount: " <<  amount << ", Location: " << location << endl;
+	cout << endl;
+}
+
+int Stops::rideAmount(){
+	return amount;
 }
