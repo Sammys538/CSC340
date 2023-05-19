@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include "People.h"
@@ -9,11 +8,12 @@ using namespace std;
 
 class Driver: public People{
 
-    public:
+	protected:
         string busID;
         bool hasLicense; 
 
-        Driver(Node* Head, Node* Curr, Node* Temp, string id, string Name, int Age, string BusID, bool HasLicense);
+	public:
+        Driver(int id, string Name, int Age, string BusID, bool HasLicense);
         Driver();
         void setBusID(string BusID);
         void setLicense(bool HasLicense);
@@ -21,8 +21,9 @@ class Driver: public People{
         bool getHasLicense();
         bool isDriving();
         bool onBreak();
-        void makeList();
         void print();
+        void report();
+        int rideAmount();
 };
 
 #endif
