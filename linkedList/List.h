@@ -13,10 +13,11 @@ private:
 public:
 
     List();
-    void addNode(string addData); 
-    void deleteNode(string delData);
+    void addNode(Node* addData); 
+    void deleteNode(Node* delData);
     void printList();
-    void swap(string firData,string secData);
+    void swap(Node* firData,Node* secData);
+    Node* getHead();
 };
 
 #endif
