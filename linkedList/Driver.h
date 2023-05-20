@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #include <string>
 #include "People.h"
@@ -23,7 +24,8 @@ class Driver: public People{
         bool onBreak();
         void print();
         void report();
-        int rideAmount();
+        int rideAmount(); // Not used
+        void boardPass(int input); // Not used
 };
 
 #endif
