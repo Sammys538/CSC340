@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include<iostream>
 #include <cstdlib>
 #include <ctime>
@@ -16,7 +17,6 @@ using namespace std;
 
 
 
-
 int main(){
 
 	int userCap;
@@ -24,132 +24,16 @@ int main(){
 	int busNum;
 	srand(time(NULL)); // Used to set initial point for generating random numbers
 
-	// cout << "BUS TESTS" << endl;
-// 	Bus test1;
-// 	cout << "Using Print()" << endl;
-// 	test1.Print();
-// 	test1.DropOff();
-// 	
-// 	cout << endl;
-// 	
-// 	test1.Print();
-// 	test1.PickUp();
-// 	
-// 	cout << endl;
-// 	
-// 	test1.Print();
-// 	if(test1.isFull() == 0){
-// 		cout << "Bus is not full" << endl;
-// 	}
-// 	else{
-// 		cout << "Bus is full" << endl;
-// 	}
-// 	cout << endl;
-// 	cout << "Using SetPassengers()" << endl;
-// 	test1.SetPassengers(25);
-// 	if(test1.isFull() == 0){
-// 		cout << "Bus is not full" << endl;
-// 	}
-// 	else{
-// 		cout << "Bus is full" << endl;
-// 	}
-// 	test1.SetCapacity(30);
-// 	test1.Print();
-// 	
-// 	cout << endl;
 	
+	cout << endl;
 	cout << "Welcome to our Bus System Linked List" << endl;
-	// cout << "Enter capacity of the bus:" << endl;
-// 	cout << "For random value, enter 0" << endl;
-// 	cin >> 	userCap;
-// 	
-// 	if(userCap == 0){
-// 		userCap = (rand() % 50) + 1;
-// 	}
-// 	cout << "Enter the passengers in your bus. If number is over capacity, automatically choose number between 0 and capacity" << endl;
-// 	cout << "If you want a random number, enter 0" << endl;
-// 	cin >> userPass;
-// 	
-// 	if(userPass == 0){
-// 		userPass = (rand() % userCap) + 1;
-// 	}
-// 	else if(userPass > userCap){
-// 		userPass = rand() % userCap;
-// 	}
-// 	
-// 	cout << "Enter the Bus Number. For random number, enter 0" << endl;
-// 	cin >> busNum;
-// 	
-// 	if(busNum == 0){
-// 		busNum = (rand() % 30) + 1;
-// 	}
-	
-// 	userCap = (rand() % 50) + 1;
-// 	userPass = (rand() % userCap) + 1;
-// 	busNum = (rand() % 30) + 1;
-	
-// 	cout << "Creating Bus with Values" << endl;
-// 	Bus* test6 = new Bus(userCap, busNum, userPass);
-// 	cout << endl;
-// 	
-// 	Node* pointer6 = new Node(test6);
-// 	pointer6->getData()->report();
-// 	
-// 	cout << endl;
-	
-	
-	
-	
-	
-	// cout << "NODES TEST" << endl;
-// 	Bus* test2 = new Bus();
-// 	Node* pointer = new Node(test2);
-// 	pointer->getData()->report();
-// 	cout << endl;
-// 	
-// 	test2->SetCapacity(30);
-// 	pointer->getData()->report();
-// 	cout << endl;
-// 	
-// 	Route* test3 = new Route();
-// 	Node* pointer2 = new Node(test3);
-// 	pointer2->getData()->report();
-// 	cout << endl;
-// 	
-// 	Stops* test4 = new Stops();
-// 	Node* pointer3 = new Node(test4);
-// 	pointer3->getData()->report();
-// 	cout << endl;
-	
-	// cout << "LINKED LIST TEST" << endl;
-// 	List linkedList;
-// 	linkedList.addNode(pointer);
-// 	linkedList.addNode(pointer2);
-// 	linkedList.printList();
-// 	cout << endl;
-	
-	
-// 	int ranAmount;
-// 	ranAmount = (rand() % 10) + 1;
-	
-// 	Stops* second = new Stops(ranAmount, 2);
-// 	
-// 	int randomAm;
-// 	
-// 	randomAm = (rand() % 15) + 1;
-// 	
-// 	Stops* third = new Stops(randomAm, 3);
+	cout << endl;
 	
 	cout << "STOP 1";
 	
 	//Creates pointer to first stop object, and is then stored in node
 	Stops* first = new Stops();
 	Node* stop1 = new Node(first);
-	
-	
-// 	Node* stop2 = new Node(second);
-// 	Node* stop3 = new Node(third);
-
 
 	//Creates firt linked list for first stop and adds node
 	List stopList;
@@ -160,8 +44,8 @@ int main(){
 	int ageNum;
 	
 	// Variables are assigned random int values
-	userCap = (rand() % 50) + 1;
-	userPass = (rand() % userCap) + 1;
+	userCap = (rand() % 50) + 20;
+	userPass = (rand() % 20) + 1;
 	busNum = (rand() % 30) + 1;
 	idGen = (rand() % 20) + 1;
 	ageNum = (rand() % 50) + 20;
@@ -169,18 +53,13 @@ int main(){
 	
 	//Creates pointer to driver object that has manual values for parameter
 	//Stored in node and then added to linked list object
-	Driver* obj5 = new Driver(idGen, "Driver", ageNum, "257", true);
-	Node* driver1 = new Node(obj5);
-	stopList.addNode(driver1);
+	Driver* obj2 = new Driver(idGen, "Driver", ageNum, "257", true);
+	Node* driver = new Node(obj2);
+	stopList.addNode(driver);
 	
 	//Bus object created and stored in node
 	Bus* obj1 = new Bus(userCap, busNum, userPass);
 	Node* bus1 = new Node(obj1);
-	
-	
-	//People object created
-	// People* obj2 = new People( 528 , "Sammy", 19);
-// 	Node* person1 = new Node(obj2);
 	
 	stopList.addNode(bus1);
 	
@@ -190,6 +69,7 @@ int main(){
 	int numGen;
 	double fareAm;
 	int dest;
+	int passengerAmount = 0;
 	srand(time(0));
 	
 	
@@ -201,118 +81,189 @@ int main(){
 		fareAm = 1.5 + (2.5 - 1.5) * (rand() % 3) / 3;
 		dest = (rand() % 3) + 2;
 		Riders* obj = new Riders(numGen, "JD", ageGen, fareAm , dest, 1);
+		passengerAmount++;
 		Node* person = new Node(obj);
 		stopList.addNode(person);
 	}
 	
 	//Finally, pointer to Route object is created and then added to linked list
-	Route* obj3 = new Route("1 2 3 4");
+	Route* obj3 = new Route("1 2 3 4 5");
 	Node* route1 = new Node(obj3);
+	
 	
 	stopList.addNode(route1);
 	
-	// stopList.addNode(person1);
-	
-	
-	
-	
-	// stopList.addNode(stop2);
-// 	stopList.addNode(stop3);
 
 	//List is printed out
 	stopList.printList();
 	
 	
 	
+	bus1->getData()->boardPass(passengerAmount); // Updates passengers in Bus
+	cout << "STOP 2";
+	Stops* second = new Stops(2); // Creates new pointer pointing to stop object
+	Node* stop2 = new Node(second); // Stored in node pointer called stop2
+	
+	List stopList2; // Creates a new linked list object to represent stop 2
+	stopList2.addNode(stop2); // Stop object is added to linked list
+	
+	stopList2.addNode(driver); // Adds Driver
+	
+	// stopList2.addNode(bus1); // Uncomment if running into errors
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		stopList2.deleteNode(driver->getNextNode()->getNextNode()); // Deletes nodes after next node, which is bus object
+	}
+	
+	stopList2.deleteNode(driver->getNextNode()->getNextNode()); // Deletes next node, which is route
+	
+	/*Updates variables used to get amount of riders at stop, as well as resets int that keeps track 
+	of rider objects created */
+	peopleAtStop = stopList2.getHead()->getData()->rideAmount(); 
+	passengerAmount = 0;
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		ageGen = (rand() % 50) + 5;
+		numGen = (rand() % 888) + 100;
+		fareAm = 1.5 + (2.5 - 1.5) * (rand() % 1) / 3;
+		dest = (rand() % 3) + 3;
+		Riders* obj = new Riders(numGen, "JD", ageGen, fareAm , dest, 2);
+		passengerAmount++;
+		Node* person = new Node(obj);
+		stopList2.addNode(person);
+	}
+	
+	Route* obj4 = new Route("2 3 4 5");
+	Node* route2 = new Node(obj4);
+	
+	stopList2.addNode(route2);
+	
+	stopList2.printList();
+	
+	
+	bus1->getData()->boardPass(passengerAmount); // Updates passengers in Bus
+	cout << "STOP 3";
+	Stops* third = new Stops(3); // Creates new pointer pointing to stop object
+	Node* stop3 = new Node(third); // Stored in node pointer called stop2
+	
+	List stopList3; // Creates a new linked list object to represent stop 2
+	stopList3.addNode(stop3); // Stop object is added to linked list
+	
+	stopList3.addNode(driver); // Adds Driver
+	
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		stopList3.deleteNode(driver->getNextNode()->getNextNode()); // Deletes nodes after next node, which is bus object
+	}
+	
+	stopList3.deleteNode(driver->getNextNode()->getNextNode()); // Deletes next node, which is route
+	
+	/*Updates variables used to get amount of riders at stop, as well as resets int that keeps track 
+	of rider objects created */
+	peopleAtStop = stopList3.getHead()->getData()->rideAmount(); 
+	passengerAmount = 0;
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		ageGen = (rand() % 50) + 5;
+		numGen = (rand() % 888) + 100;
+		fareAm = 1.5 + (2.5 - 1.5) * (rand() % 1) / 3;
+		dest = (rand() % 3) + 4;
+		Riders* obj = new Riders(numGen, "JD", ageGen, fareAm , dest, 3);
+		passengerAmount++;
+		Node* person = new Node(obj);
+		stopList3.addNode(person);
+	}
+	
+	Route* obj5 = new Route("3 4 5");
+	Node* route3 = new Node(obj5);
+	
+	stopList3.addNode(route3);
+	
+	stopList3.printList();
 	
 	
 	
+	bus1->getData()->boardPass(passengerAmount); // Updates passengers in Bus
+	cout << "STOP 4";
+	Stops* fourth = new Stops(4); // Creates new pointer pointing to stop object
+	Node* stop4 = new Node(fourth); // Stored in node pointer called stop2
+	
+	List stopList4; // Creates a new linked list object to represent stop 2
+	stopList4.addNode(stop4); // Stop object is added to linked list
+	
+	stopList4.addNode(driver); // Adds Driver
+	
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		stopList4.deleteNode(driver->getNextNode()->getNextNode()); // Deletes nodes after next node, which is bus object
+	}
+	
+	stopList4.deleteNode(driver->getNextNode()->getNextNode()); // Deletes next node, which is route
+	
+	/*Updates variables used to get amount of riders at stop, as well as resets int that keeps track 
+	of rider objects created */
+	peopleAtStop = stopList4.getHead()->getData()->rideAmount(); 
+	passengerAmount = 0;
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		ageGen = (rand() % 50) + 5;
+		numGen = (rand() % 888) + 100;
+		fareAm = 1.5 + (2.5 - 1.5) * (rand() % 1) / 3;
+		dest = (rand() % 1) + 5;
+		Riders* obj = new Riders(numGen, "JD", ageGen, fareAm , dest, 4);
+		passengerAmount++;
+		Node* person = new Node(obj);
+		stopList4.addNode(person);
+	}
+	
+	Route* obj6 = new Route("4 5");
+	Node* route4 = new Node(obj6);
+	
+	stopList4.addNode(route4);
+	
+	stopList4.printList();
 	
 	
 	
-// 	cout << "ROUTE TESTS" << endl;
-// 	Route test2;
-// 	cout << "Using Print()" << endl;
-// 	test2.Print();
-// 	cout << "Using GetSchedule()" << endl;
-// 	cout << test2.GetSchedule() << endl;
-// 	cout << "Using SetSchedule()" << endl;
-// 	test2.SetSchedule("5 8 5");
-// 	test2.Print();
-// 	
-// 	cout << endl;
-// 	
-// 	cout << "STOPS TESTS" << endl;
-// 	Stops test3;
-// 	cout << "Using Print()" << endl;
-// 	test3.Print();
-// 	cout << "Using all getters" << endl;
-// 	cout << test3.GetAmount() << endl;
-// 	cout << test3.GetLocation() << endl;
-// 	cout << "After using setters" << endl;
-// 	test3.SetAmount(100);
-// 	test3.SetLocation(5);
-// 	test3.Print();
-// 	
-// 	cout << endl;
-// 	
-// 	cout << "NODE TESTS" << endl;
-// 	Node test4;
-// 	cout << "Using Getters" << endl;
-// 	cout << test4.getData() << endl;
-// 	cout << test4.getNextNode() << "<- null pointer" << endl;
-// 	cout << test4.getPrevNode() << "<- null pointer" << endl;
-// 	cout << "Using Setter" << endl;
-// 	test4.setData("Test Node");
-// 	cout << test4.getData() << endl;
-// 	
-// 	cout << endl;
-// 	
-// 	cout << "PEOPLE TESTS" << endl;
-// 	
-// 	People sammy(nullptr, nullptr, nullptr, "0528", "Sammy", 19);
-// 	sammy.print();
-// 	People zero;
-// 	zero.print();
-// 	
-// 	cout << endl;
-// 	
-// 	cout << "RIDERS TESTS" << endl;
-// 	
-// 	Riders jared(nullptr, nullptr, nullptr, "1010", "Jared", 20, 1.5, 3, 2);
-// 	jared.print();
-// 	Riders basic;
-// 	basic.print();
-// 	
-// 	cout << endl;
-// 	
-// 	cout << "DRIVERS TESTS" << endl;
-// 	
-// 	Driver trucker(nullptr, nullptr, nullptr, "1111", "Dave", 40, "2595", true);
-// 	trucker.print();
-// 	Driver unknown;
-// 	unknown.print();
-// 	
-// 	cout << endl;
-// 	
-// 	cout << "LIST TESTS" << endl;
-// 	Link* list = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
-// 	list->setData("1");
-// 	
-// 	
-// // People* sammy = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
-// // 	People* jared = new Riders(NULL, NULL, NULL, "string id", "string Name", 21, 5.50, 1, 2);
-// 
-// 	List* pile = new List();
-// 	pile->addNode("jared");
-// 	pile->addNode("sammy");
-// 	pile->addNode("corey");
-// 	pile->printList();
-// 	pile->deleteNode("sammy");
-// 	pile->printList();
-// 	
-// 	// cout << "SYSTEM TESTS" << endl;
-// // 	System test5;
-// 	
+	bus1->getData()->boardPass(passengerAmount); // Updates passengers in Bus
+	cout << "STOP 5 (Last Stop)";
+	Stops* last = new Stops(5); // Creates new pointer pointing to stop object
+	Node* stop5 = new Node(last); // Stored in node pointer called stop2
 	
+	List stopList5; // Creates a new linked list object to represent stop 2
+	stopList5.addNode(stop5); // Stop object is added to linked list
+	
+	stopList5.addNode(driver); // Adds Driver
+	
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		stopList5.deleteNode(driver->getNextNode()->getNextNode()); // Deletes nodes after next node, which is bus object
+	}
+	
+	stopList5.deleteNode(driver->getNextNode()->getNextNode()); // Deletes next node, which is route
+	
+	/*Updates variables used to get amount of riders at stop, as well as resets int that keeps track 
+	of rider objects created */
+	peopleAtStop = stopList3.getHead()->getData()->rideAmount(); 
+	passengerAmount = 0;
+	
+	for(int i = 0; i < peopleAtStop; i++){
+		ageGen = (rand() % 50) + 5;
+		numGen = (rand() % 888) + 100;
+		fareAm = 1.5 + (2.5 - 1.5) * (rand() % 1) / 3;
+		dest = 6;
+		Riders* obj = new Riders(numGen, "JD", ageGen, fareAm , dest, 5);
+		passengerAmount++;
+		Node* person = new Node(obj);
+		stopList5.addNode(person);
+	}
+	
+	Route* obj7 = new Route("5");
+	Node* route5 = new Node(obj7);
+	
+	stopList5.addNode(route5);
+	
+	stopList5.printList();
+	
+	cout << "End of Program. Thank you." << endl;
 }
