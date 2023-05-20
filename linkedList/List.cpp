@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #include <cstdlib>
 #include "List.h"
@@ -15,10 +16,7 @@ Node* List::getHead(){
 }
 
 void List::addNode(Node* addData){
-    Node* n = addData; // declares and initializes n to point to a new node(samething as Node* nodeptr)
-  //   n->setNextNode(NULL); // node* n points to node* next which is equal to NULL
-//     n->setData(addData);
-//     n->setPrevNode(NULL);
+    Node* n = addData; // declares and initializes n to point to addData
     
      if(head != NULL){
         curr = head;
@@ -55,11 +53,11 @@ void List::deleteNode(Node* delData){
         }
 
         delete delPtr;
-        cout << "The value: " << delData << " was deleted." << endl;
+        // cout << "The value: " << delData << " was deleted." << endl;
     }
 }
 
-void List::printList(){
+void List::printList(){ // Prints out nodes in linked list
     curr = head;
     cout<<endl;
     while(curr != NULL){
@@ -70,6 +68,6 @@ void List::printList(){
 
 }
 
-void List::swap(Node* firData, Node* secData){
+void List::swap(Node* firData, Node* secData){ // Swap not finished
     
 }
