@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #ifndef Bus_H
 #define Bus_H
@@ -17,9 +18,10 @@ class Bus: public Link{
 		Bus(int cap, int busNum, int pass);
 		void Print();
 		void DropOff();
-		void PickUp();
+		void PickUp(int input);
 		void report();
 		int rideAmount();
+		void boardPass(int input);
 	private:
 		int busNumber;
 		int capacity;
