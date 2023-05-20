@@ -1,9 +1,10 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #include "People.h"
 
 using namespace std;
 
-    People::People(int id, string Name, int Age){
+   People::People(int id, string Name, int Age){
          ID = id;
          name = Name;
          age = Age;
@@ -46,6 +47,10 @@ using namespace std;
     	cout << "Name: " << name << ", ID: " << ID << ", Age: " << age << endl;
     }
     
-    int People::rideAmount(){
-		return age;
-	}
+    int People::rideAmount(){ // NOT USED
+	return 1;
+    }
+	
+    void People::boardPass(int input){ // NOT USED
+		
+    }
