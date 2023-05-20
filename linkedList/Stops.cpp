@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 using namespace std;
 #include <cstdlib>
@@ -28,20 +29,24 @@ Stops::Stops(){
 	location = 1;
 }
 
-Stops::Stops(int riders, int stopNum){
-	amount = riders;
+Stops::Stops(int stopNum){
 	location = stopNum;
+	amount = (rand() % 4) + 1;
 }
 
 void Stops::Print(){
-	cout << "Amount: " <<  amount << ", Location: " << location << endl;
+	cout << "Stop Amount: " <<  amount << ", Stop Location: " << location << endl;
 }
 
 void Stops::report(){
-	cout << "Amount: " <<  amount << ", Location: " << location << endl;
+	cout << "Stop Amount: " <<  amount << ", Stop Location: " << location << endl;
 	cout << endl;
 }
 
-int Stops::rideAmount(){
+int Stops::rideAmount(){ 
 	return amount;
+}
+
+void Stops::boardPass(int input){ // NOT USED
+		
 }
