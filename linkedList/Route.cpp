@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 using namespace std;
 #include <string>
@@ -35,9 +36,14 @@ void Route::report(){
 	cout << endl;
 	cout << "ROUTE" << endl;
 	cout << "Schedule: " << schedule << endl;
-	cout << endl;
+	cout << "----------------------------------------" << endl;
 }
 
-int Route::rideAmount(){
+int Route::rideAmount(){ // NOT USED
 	return 1;
 }
+
+void Route::boardPass(int input){ // NOT USED
+		
+}
+
