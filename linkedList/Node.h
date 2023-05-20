@@ -1,7 +1,10 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
+#include "Link.h"
+
+
 #include <iostream>
 #ifndef Node_H
 #define Node_H
-#include "Link.h"
 
 class Node{
 	public:
