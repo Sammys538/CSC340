@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #include <string>
 #include "Link.h"
@@ -27,6 +28,7 @@ class People: public Link{
     	void print();
     	void report();
     	int rideAmount();
+    	void boardPass(int input);
 };
 
 #endif
