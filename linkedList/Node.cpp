@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 using namespace std;
 
@@ -32,7 +33,3 @@ void Node::setNextNode(Node* next){
 void Node::setPrevNode(Node* prev){
 	prevNode = prev;
 }
-
-// void Node::print(){
-// 	cout << this->data;
-// }
