@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #include "Riders.h"
 using namespace std;
@@ -40,8 +41,6 @@ using namespace std;
     }
     
     void Riders::print(){
-        // cout <<  "Name: " << getName() << ", ID: "  << getID() << ", Age: " << getAge() << ", Current Stop: " 
-//              << getCurrStop() << ", Destination: " << getDestination() <<endl;
 		cout << "Name: " << name << ", ID: " << ID << ", Age: " << age <<
     		", Destination: " << destination << ", Current Stop: " << currStop << endl;
     }
@@ -51,6 +50,10 @@ using namespace std;
     	", Current Stop: " << currStop << ", Destination: " << destination << endl;
     }
     
-    int Riders::rideAmount(){
-    	return destination;
+    int Riders::rideAmount(){ // NOT USED
+    	return 1;
     }
+    
+    void Riders::boardPass(int input){ // NOT USED
+		
+	}
