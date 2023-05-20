@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 using namespace std;
 #ifndef LIST_H
 #define LIST_H
