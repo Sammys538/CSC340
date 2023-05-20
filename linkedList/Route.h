@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #ifndef Route_H
 #define Route_H
@@ -13,6 +14,7 @@ class Route: public Link{
 		void Print();
 		void report();
 		int rideAmount();
+		void boardPass(int input);
 	private:
 		string schedule;
 };
