@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 #include "Driver.h"
 
@@ -57,6 +58,10 @@ using namespace std;
     		}
         }
         
-        int Driver::rideAmount(){
-        	return age;
+        int Driver::rideAmount(){ // NOT USED
+        	return 1;
         }
+        
+        void Driver::boardPass(int input){ // NOT USED
+			
+		}
