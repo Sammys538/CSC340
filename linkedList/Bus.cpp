@@ -1,3 +1,4 @@
+// Group Members: Sammy Rodriguez, Jared Barbero, and Pablo Partida
 #include <iostream>
 using namespace std;
 #include <cstdlib>
@@ -16,8 +17,8 @@ void Bus::DropOff(){
 	passengers -= 3;
 }
 
-void Bus::PickUp(){
-	passengers += 4;
+void Bus::PickUp(int input){
+	passengers += input;
 }
 
 
@@ -71,6 +72,10 @@ void Bus::report(){
 	cout << endl;
 }
 
-int Bus::rideAmount(){
-	return capacity;
+int Bus::rideAmount(){ // Not used
+	return 1;
+}
+
+void Bus::boardPass(int input){ 
+	passengers += input;
 }
